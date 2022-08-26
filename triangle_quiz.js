@@ -9,6 +9,7 @@ submitBtn.addEventListener("click", calculateScore);
 
 function calculateScore() {
     const formAnswer = new FormData(formQuiz);
+    outputScore.style.fontWeight = "bold";
     let score = 0, quizAnswered = 0;
     const userAnswers = [];
     for (let values of formAnswer.values()) {
@@ -22,9 +23,11 @@ function calculateScore() {
                 score++;
             }    
         }
-        console.log(score);
+        outputScore.innerText = "Your score is: " + score;
+        outputScore.style.color = "green";
     }
     else {
-        console.log("Please answer all questions");
+        outputScore.innerText = "You must play the whole quiz for the score.";
+        outputScore.style.color = "red";
     }
 }
