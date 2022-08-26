@@ -9,12 +9,22 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <nav class="nav">
+        <a href="./index.html" class="link-title"><h1>Fun with Triangles</h1></a>
+        <div class="link-container">
+            <a href="./index.html" class="link">Triangle?</a>
+            <a href="./triangle-hypotenuse.html" class="link">Hypotenuse</a>
+            <a href="./triangle-quiz.html" class="link">Quiz</a>
+            <a href="./triangle-area.html" class="link">Area</a>
+        </div>
+    </nav>
     <h1>Is this a triangle?</h1>
+
     <label>Enter first angle: <input class="first-angle" type="number" min="0" autofocus></label>
     <label>Enter second angle: <input class="second-angle" type="number" min="0" ></label>
     <label>Enter third angle: <input class="third-angle" type="number" min="0" ></label>
     <button class="btn-check">Is triangle?</button>
-    <p class="result"></p>
+    <h3 class="result"></h3>
 </body>
 <script src="./triangle_check.js" type="text/javascript"></script>
 </html>
