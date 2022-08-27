@@ -78,6 +78,7 @@ body{
     cursor: pointer;
     background-color: #22d3ee;
     border-radius: 1rem;
+    font-size: 1rem;
 }
 
 .quiz-container{
@@ -107,6 +108,12 @@ body{
     border-radius: 1rem;
     display: block;
     margin: auto;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.output-score{
+    text-align: center;
 }
 
 .btn-quiz:hover{
