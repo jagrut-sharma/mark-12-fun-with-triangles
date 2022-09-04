@@ -54,6 +54,10 @@ body{
     color: #fafaf9;
 }
 
+.nav .link-active{
+    color: #cffafe;
+}
+
 .main-container{
     display: flex;
     flex-direction: column;
