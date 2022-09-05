@@ -10,7 +10,7 @@ function calculateArea() {
     height = Number(heightOfTriangle.value);
 
     if (base > 0 && height > 0){
-        const area = 0.5 * base * height;
+        const area = (0.5 * base * height).toFixed(2);
         resultArea.innerText = "Area of triangle: " + area;
         resultArea.style.color = "green";
     }

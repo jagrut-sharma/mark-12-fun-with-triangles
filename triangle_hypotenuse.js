@@ -11,7 +11,7 @@ function calculateHypotenuse() {
     secondLength = Number(lengthB.value);
 
     if (firstLength > 0 && secondLength > 0) {
-        hypotenuse = Math.sqrt(firstLength**2 + secondLength**2);
+        hypotenuse = Math.sqrt(firstLength**2 + secondLength**2).toFixed(2);
         lengthHypotenuse.innerText = "Length of Hypotenuse is: " + hypotenuse;
         lengthHypotenuse.style.color = "green";
     }
